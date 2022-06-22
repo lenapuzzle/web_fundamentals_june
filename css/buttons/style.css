@@ -1,0 +1,30 @@
+.rounded {
+  width: 120px;
+  color: lightseagreen;
+  border: 2px outset;
+  border-color: lightseagreen;
+  border-radius: 15px;
+}
+
+.circle {
+  border: none;
+  height: 30px;
+  width: 30px;
+  color: white;
+  background-color: lightseagreen;
+  border-radius: 50%;
+}
+
+.shadowed {
+  width: 150px;
+  color: white;
+  background-color: rgb(65, 65, 213);
+  border: 3px outset;
+  border-color: black;
+  box-shadow: 3px 3px 3px black;
+}
+
+button {
+  margin: 8px;
+  padding: 5px;
+}
