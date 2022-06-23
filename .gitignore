@@ -1,4 +1,9 @@
-html/.DS_Store
-html/portfolio_html/.DS_Store
-css/.DS_Store
+
 html/portfolio_html/imgs/.DS_Store
+html/portfolio_html/.DS_Store
+.gitignore
+.gitignore
+.gitignore
+html/.DS_Store
+css/.DS_Store
+.DS_Store
