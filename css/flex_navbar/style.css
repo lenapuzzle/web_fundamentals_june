@@ -1,0 +1,37 @@
+.nav {
+  background-color: black;
+}
+
+.nav-title {
+  color: white;
+}
+
+#empty {
+  width: 800px;
+}
+
+.nav-links {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  width: 7em;
+  height: 2em;
+  font-size: large;
+  color: white;
+  background-color:cornflowerblue;
+  box-shadow: 5px, 5px, 5px, black;
+}
