@@ -1,0 +1,47 @@
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1050px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  border: 3px solid rgb(198, 187, 187);
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+.top {
+  background-color: #17a2b8;
+  height: 125px;
+  margin-bottom: 70px;
+}
+
+.bottom {
+  padding: 20px;
+}
+
+.pic {
+  border-radius: 50%;
+  background-color: #fff;
+  height: 190px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.pic1, .pic2 {
+  height: 20px;
+}
+
+a {
+  color: #3a81e6;
+}
