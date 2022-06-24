@@ -1,19 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .nav {
-  background-color: black;
+  background-color: #2A2A2A;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-title {
   color: white;
 }
 
-#empty {
-  width: 800px;
-}
-
 .nav-links {
-  justify-content: space-evenly;
+  gap: 20px;
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
 .active {
@@ -22,16 +27,16 @@
   font-weight: bold;
 }
 
-.link {
+a {
   text-decoration: none;
-  color: white;
+  color: #ccc;
 }
 
 .btn {
-  width: 7em;
-  height: 2em;
+  padding: 0.25em 1.5em;
   font-size: large;
   color: white;
   background-color:cornflowerblue;
-  box-shadow: 5px, 5px, 5px, black;
+  box-shadow: 2px 2px 0 black;
+  border: 2px solid black;
 }
