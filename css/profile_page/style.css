@@ -196,9 +196,9 @@ span {
   padding: 15px;
 }
 
-#view-more {
+.view-more {
+  padding: 15px;
+  font-size: 1.5rem; 
   border: 3px solid rgb(198, 187, 187);
   border-top: none;
-  padding: 15px;
-  font-size: 1.5rem;
 }
