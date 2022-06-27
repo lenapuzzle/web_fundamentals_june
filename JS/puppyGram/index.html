@@ -15,7 +15,7 @@
       <input type="text">
     <button id="search">Search!</button> 
     </div>
-    <button id="login">Login</button>
+    <button onclick="removeElement(this)" id="login">Login</button>
   </div>
 
   <div id="main">
@@ -26,7 +26,7 @@
           <h3>Junior</h3>
           <em>Male</em>
           <p>Breed: <em>Fox</em></p>
-          <button>10 likes</button>
+          <button onclick="alert('You liked this pet')">10 likes</button>
         </div>
         <div id="puppy-right">
           <p>Junior is very spontaneous, high-energy <a href="#">Fox</a> who loves to eat food!</p>
@@ -34,11 +34,11 @@
       </div>
       <div class="puppy">
         <div id="puppy-left">
-          <img src="resources/beagle.jpeg" alt="puppy image">
+          <img onmouseover="changeImg(this)" src="resources/beagle.jpeg" alt="puppy image">
           <h3>Junior</h3>
           <em>Female</em>
           <p>Breed: <em>Beagle</em></p>
-          <button>8 likes</button>
+          <button onclick="alert('You liked this pet')">8 likes</button>
         </div>
         <div id="puppy-right">
           <p>Fluffy is a quiet, shy and calm <a href="#">Beagle</a> who loves to eat, play fetch!</p>
@@ -48,20 +48,20 @@
     <div id="right">
       <div id="right-top">
         <p>Please, upload your pup info to our puppy social media!</p>
-        <button>Upload new Pup!</button>
+        <button onclick="uploadPup(this)">Upload new Pup!</button>
       </div>
       <div id="right-bottom">
         <p id="top">Our popular video of the week!</p>
-        <video id="video" src="resources/puppy_video.mp4"></video>
+        <video onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" id="video" src="resources/puppy_video.mp4"></video>
         <p><em>This is Josie, the playful beach dog!</em></p>
       </div>
     </div>
-      <div id="cookie-box">
+      <div onclick="cookieMonster(this)" id="cookie-box">
     <img src="resources/caution.jpeg" alt="Caution icon">
     <p>This site will track all your information and sell it. You will get some dopamine hits from the scrolling tho. Would you like to accept these cookies?</p>
     <button>I accept</button>
   </div>
   </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
