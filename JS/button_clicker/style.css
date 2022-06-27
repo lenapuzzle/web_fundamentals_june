@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav-bar {
+  background-color: rgb(189, 183, 183);
+  margin: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+}
+
+#login {
+  height: 35px;
+  width: 90px;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  box-shadow: 3px 3px black;
+  font-family: fantasy;
+  border: 3px solid black;
+}
+
+
+#nav-bar input {
+  height: 40px;
+  width: 350px;
+  font-size: 20px;
+  color:  rgb(189, 183, 183);
+  font-family: fantasy;
+  border: 3px solid black;
+}
+
+h1 {
+  font-size: 40px;
+  color: black;
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+#main {
+  height: 900px;
+  margin: 0px 30px;
+  display: flex;
+  gap: 20px; 
+}
+
+#left {
+  flex: 2;
+}
+
+#right {
+  flex: 1;
+}
+
+.ninja {
+  border: 3px solid black;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  font-family: fantasy;
+}
+
+#ninja-left {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 100px;
+}
+
+#ninja-left > button {
+  background-color: rgb(255, 217, 127);
+  border: 3px solid black;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin-top: 15px;
+  box-shadow: 3px 3px black;
+}
+
+#ninja-right > p {
+  font-size: 25px;
+}
+
+#right-top {
+  outline: 3px solid black;
+  height: 200px;
+  margin-bottom: 30px;
+  padding: 30px 30px;
+  font-size: 25px;
+}
+
+#right-top > button {
+  background-color:  rgb(99, 187, 99);
+  border: 3px solid black;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin-top: 30px;
+  box-shadow: 3px 3px black;
+}
+
+#right-top > h3 {
+  font-family: fantasy;
+}
+
+
+
+
+
+
+
