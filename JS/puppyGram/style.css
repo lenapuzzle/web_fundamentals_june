@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* padding: 0px 30px; */
+}
+#nav-bar {
+  /* outline: 3px solid black; */
+  /* height: 100px; */
+  background-color: aquamarine;
+  margin: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+}
+
+#login {
+  height: 40px;
+  width: 90px;
+  background-color: burlywood;
+  box-shadow: 3px 3px black;
+}
+
+#search {
+  height: 40px;
+  width: 100px;
+  background-color: burlywood;
+  box-shadow: 3px 3px black;
+}
+
+#nav-bar input {
+  height: 40px;
+  /* or you could use padding instead of height and width */
+  width: 250px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+#main {
+  /* outline: 3px solid red; */
+  height: 900px;
+  margin: 0px 30px;
+  display: flex;
+  gap: 20px; 
+  /* or you can do margin on left or right */
+}
+
+/* #right {
+  outline: 3px solid black;
+} */
+
+#left {
+  flex: 2;
+}
+
+#right {
+  flex: 1;
+}
+
+.puppy {
+  /* outline: 3px solid red; */
+  border: 2px solid black;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  /* justify-content: space-between; */
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
+#puppy-left, #puppy-right {
+  /* outline: 2px solid purple; */
+  /* height: 250px; */
+}
+
+#puppy-left > img {
+  height: 150px;
+  width: 150px;
+}
+
+#puppy-left {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 100px;
+}
+
+#puppy-left > button {
+  background-color: aquamarine;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin-top: 15px;
+  box-shadow: 3px 3px black;
+}
+
+#puppy-right > p {
+  font-size: 25px;
+}
+
+#right-top {
+  outline: 3px solid black;
+  height: 200px;
+  margin-bottom: 30px;
+  padding: 30px 30px;
+  font-size: 25px;
+}
+
+#right-bottom {
+  outline: 3px solid black;
+  height: 300px;
+  padding: 30px 20px;
+  font-size: 25px;
+}
+
+#right-top > button {
+  background-color:  rgb(185, 117, 29);
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin-top: 30px;
+  box-shadow: 3px 3px black;
+}
+
+#top {
+  text-align: center;
+}
+
+#video {
+  height: 150px;
+  width: 250px;
+  margin-top: 20px;
+}
+
+#cookie-box {
+  padding: 20px;
+  outline: 2px solid black;
+  background-color: gray;
+  margin: 0px 30px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 20px;
+}
+
+#cookie-box > img {
+  width: 130px;
+  margin-right: 20px;
+}
+
+#cookie-box > button {
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  padding: 5px 20px;
+  box-shadow: 3px 3px black;
+}
