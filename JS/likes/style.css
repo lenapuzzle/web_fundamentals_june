@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#user {
+  height: 130px;
+  width: 400px;
+  border: 3px solid black;
+  margin: 50px 50px;
+  padding: 30px;
+}
+
+#user-top {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#user-top > button {
+  border: 3px solid black;
+  height: 30px;
+  width: 55px;
+  box-shadow: 3px 3px black;
+  background-color: rgb(255, 204, 0);
+}
+
+#user-top > p {
+  font-size: 1.1rem;
+}
