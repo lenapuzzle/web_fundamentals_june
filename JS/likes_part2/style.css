@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 px 300px;
+}
+
+#header {
+  background-color: black;
+  color: white;
+  padding: 30px 40px;
+  margin-bottom: 150px;
+  margin: 0px 100px;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#main {
+  display: flex;
+  height: 900px;
+  margin-bottom: 30px;
+  margin: 0px 100px;
+}
+
+#left {
+  outline: 3px solid black;
+}
+
+#left {
+  flex: 1;
+  height: 250px;
+  border: 2px black;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+#right {
+  flex: 2;
+  height: 500px;
+  border: 2px black;
+  margin-left: 30px;
+}
+
+#user {
+  /* height: 130px; */
+  border: 3px solid black;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+#user-top {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#user-top > button {
+  border: 3px solid black;
+  height: 40px;
+  width: 75px;
+  box-shadow: 3px 3px black;
+  background-color: rgb(255, 204, 0);
+  font-size: 1.2rem;
+}
+
+#user-top > p {
+  font-size: 1.3rem;
+}
+
+#left > img {
+  height: 100px;
+  margin-left: 50px;
+}
+
+a {
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 1.2rem;
+}
+
+#left > p {
+  margin-top: 30px;
+  margin-left: 45px;
+  font-size: 1.8rem;
+}
+
+.p {
+  font-size: 1.3rem;
+}
+
+.a {
+  
+}
