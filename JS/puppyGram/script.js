@@ -31,3 +31,10 @@ function cookieMonster(element) {
   document.querySelector("#cookie-box");
   element.remove();
 }
+
+function inputAlert() {
+  console.log("hey");
+  let searchInput = document.querySelector("#search1");
+  alert("You searched for " + searchInput.value);
+
+}
