@@ -11,3 +11,18 @@
   font-size: 1.2rem;
   text-align: center;
 }
+
+#button {
+  padding: 10px;
+  margin: 30px 10px;
+  background-color: burlywood;
+  font-size: 1.2rem;
+  box-shadow: 3px 3px black;
+  position: relative;
+  left: 1220px;
+}
+
+h1 {
+  margin: 15px;
+  text-align: center;
+}
