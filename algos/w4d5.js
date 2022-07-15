@@ -61,6 +61,52 @@ function updateInventory(newInv, currInv) {
   }
   return currInv;
 }
+// or this way
+// function updateInventory2(newInv, currentInv) {
+//   const currInvTable = {};
+
+//   for (let i = 0; i < currentInv.length; i++) {
+//     // save a reference to this currentInv item into our hash table object
+//     // so we can look it up with O(1) constant time
+//     currInvTable[currentInv[i].name] = currentInv[i];
+//   }
+
+//   for (let i = 0; i < newInv.length; i++) {
+//     const item = newInv[i];
+
+//     if (currInvTable.hasOwnProperty(item.name)) {
+//       // retrieve the currentInv obj reference
+//       let currentInvItem = currInvTable[item.name];
+
+//       // update the obj by reference
+//       currentInvItem.quantity += item.quantity;
+//     } else {
+//       currentInv.push(item);
+//     }
+//   }
+//   return currentInv;
+// }
+
+// or this way :)
+// function updateInventory3(newInv, currInv) {
+//   new_arr = []
+//   newInv.forEach((element) => {
+//     let match = false
+//     currInv.forEach((element2) => {
+//       if (element2['name'] == element['name']) {
+//         match = true
+//         // just needed to reference element2 not element :D
+//         // element['quantity'] = element['quantity'] + element2['quantity']
+
+//         element2['quantity'] = element['quantity'] + element2['quantity']
+//       }
+//     });
+//     if (!match) {
+//       currInv.push(element)
+//     }
+//   });
+//   return currInv
+// }
 
 console.log(updateInventory(newInv1, currInv1))
 console.log(updateInventory(newInv2, currInv2))
