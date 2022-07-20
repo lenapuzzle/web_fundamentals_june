@@ -1,9 +1,9 @@
 /* 
-  Array: Binary Search (non recursive)
-  Given a sorted array and a value, return whether the array contains that value.
-  Do not sequentially iterate the array. Instead, ‘divide and conquer’,
-  taking advantage of the fact that the array is sorted .
-  Bonus (alumni interview): 
+Array: Binary Search (non recursive)
+Given a sorted array and a value, return whether the array contains that value.
+Do not sequentially iterate the array. Instead, ‘divide and conquer’,
+taking advantage of the fact that the array is sorted .
+Bonus (alumni interview): 
     first complete it without the bonus, because they ask for additions
     after the initial algo is complete
     return how many times the given number occurs
@@ -36,9 +36,8 @@ const expected4 = 4;
  * @param {number} searchNum
  * @returns {boolean} Whether the given num exists in the given array.
  */
-function binarySearch(sortedNums, searchNum) {
 
-  function binarySearch(sortedNums, searchNum) {
+function binarySearch(sortedNums, searchNum) {
     let left_index = 0;
     let right_index = sortedNums.length - 1;
     while (left_index <= right_index) {
