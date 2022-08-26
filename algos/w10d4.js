@@ -164,32 +164,58 @@ class Queue {
      * - Space: O(1) constant.
      * @returns {boolean} Whether the sum of the left and right halves is equal.
      */
-     isSumOfHalvesEqual() {
-        if (this.size() % 2 != 0) {
+
+    isSumOfHalvesEqual() {
+        if(this.size()%2 != 0){
             return false;
         }
-
-        let halfSize = this.size() / 2;
-        let sumLeft = 0;
-        let sumRight = 0;
-
-        //loop through the first half
-        for (let i = 0; i < halfSize; i++) {
-            sumLeft += this.items[i];
+        const qSize = this.size();
+        let countFirst = 0;
+        let countSecond = 0;
+        for(let i = 0; i < qSize/2; i++){
+            let tempVal = this.dequeue();
+            countFirst += tempVal;
+            this.enqueue(tempVal);
         }
-
-        //loop through the second half
-        for (let i = halfSize; i < this.size(); i++) {
-            sumRight += this.items[i];
+        for(let i = 0; i < qSize/2; i++){
+            let tempVal = this.dequeue();
+            countSecond += tempVal;
+            this.enqueue(tempVal);
         }
-
-        // console.log(halfSize)
-        // console.log(sumLeft)
-        // console.log(sumRight)
-
-        return sumLeft == sumRight;
+        if(countFirst == countSecond){
+            return true;
+        }
+        return false;
     }
-}
+
+//    // or this way
+
+//     isSumOfHalvesEqual() {
+//         if (this.size() % 2 != 0) {
+//             return false;
+//         }
+
+//         let halfSize = this.size() / 2;
+//         let sumLeft = 0;
+//         let sumRight = 0;
+
+//         //loop through the first half
+//         for (let i = 0; i < halfSize; i++) {
+//             sumLeft += this.items[i];
+//         }
+
+//         //loop through the second half
+//         for (let i = halfSize; i < this.size(); i++) {
+//             sumRight += this.items[i];
+//         }
+
+//         // console.log(halfSize)
+//         // console.log(sumLeft)
+//         // console.log(sumRight)
+
+//         return sumLeft == sumRight;
+//     }
+// }
 
 /**
  * Class to represent a Queue but is implemented using two stacks to store the
@@ -210,7 +236,10 @@ class TwoStackQueue {
      * @param {any} item To be added.
      * @returns {number} The new number of items in the queue.
      */
-    enqueue(item) { }
+    enqueue(item) {
+        this.stack1.push(item);
+        return this.stack1.size();
+    }
 
     /**
      * TODO: implement this method
@@ -219,8 +248,23 @@ class TwoStackQueue {
      * - Space: O(?).
      * @returns {any} The removed item.
      */
-    dequeue() { }
-}
+    dequeue() {
+        if(this.stack1.isEmpty()){
+            return undefined;
+        }
+        const qSize = this.stack1.size();
+        //Reverses order so that items are in order that they came in (like a queue)
+        for(let i = 0; i < qSize; i++){
+            this.stack2.push(this.stack1.pop());
+        }
+        //takes the top off the new stack (which was first item in, first in queue)
+        const tempData = this.stack2.pop();
+        //returns stack 1 to original state, minus the popped item
+        for(let i = 0; i < qSize -1; i++){
+            this.stack1.push(this.stack2.pop());
+        }
+        return tempData;
+    }
 
 /**
  * Class to represent a stack using an array to store the stacked items.
