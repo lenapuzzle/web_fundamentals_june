@@ -43,6 +43,56 @@ function twoSum(nums, targetSum) {
         }
     }
 }
+
+// or these 3 other ways
+    // function twoSum(nums, targetSum) {
+    //     const numsToIndex = {};
+    
+    //     for (let i = 0; i < nums.length; i++) {
+    //     const numA = nums[i];
+    //     const numB = targetSum - numA;
+    
+    //     if (numsToIndex.hasOwnProperty(numB)) {
+    //         const idxB = numsToIndex[numB];
+    //         return [idxB, i];
+    //     }
+    //     numsToIndex[numA] = i;
+    //     }
+    //     return [];
+    // }
+    
+    // // Technically a Map is better to use for objects with keys added dynamicall.
+    // function twoSumMap(nums, targetSum) {
+    //     const numsToIndex = new Map();
+    
+    //     for (let i = 0; i < nums.length; i++) {
+    //     const numA = nums[i];
+    //     const numB = targetSum - numA;
+    
+    //     if (numsToIndex.has(numB)) {
+    //         const idxB = numsToIndex[numB];
+    //         return [idxB, i];
+    //     }
+    //     numsToIndex.set(numA, i);
+    //     }
+    //     return [];
+    // }
+    
+    // /**
+    //  * - Time: O(n^2) quadratic.
+    //  * - Space: O(1) constant.
+    //  */
+    // function twoSumSpaceOptimized(nums, targetSum) {
+    //     for (let i = 0; i < nums.length; i++) {
+    //     for (let j = i + 1; j < nums.length; ++j) {
+    //         if (nums[i] + nums[j] === targetSum) {
+    //         return [i, j];
+    //         }
+    //     }
+    //     }
+    //     return [];
+    // }
+    
 console.log(twoSum(nums1, targetSum1));
 console.log(twoSum(nums2, targetSum2));
 console.log(twoSum(nums3, targetSum3));
