@@ -71,4 +71,31 @@
      * @param {Array<Object>} collection
      * @returns {?Object} The object that was updated or null if no object found.
      */
-    function findByIdAndUpdate(id, updatedVals, collection) {}
+    // function findByIdAndUpdate(id, updatedVals, collection) {
+    //     const student = collection.filter(student => id === student.id)
+    
+    //     if (student.length === 0) {
+    //         return null
+    //     }
+    
+    //     return { ...student[0], ...updatedVals }
+    // }
+    
+    // console.log(findByIdAndUpdate(id2, updateData2, students));
+
+    function findByIdAndUpdate(id, updatedVals, collection) {
+        for(let i = 0; i < collection.length; i++) {
+            if(collection[i]['id'] === id) {
+                for(key in updatedVals) {
+                    if(key in collection[i]) {
+                        collection[i][key] = updatedVals[key]
+                    }
+                }
+                return collection[i]
+            }
+        }
+        return null
+    }
+
+    console.log(findByIdAndUpdate(id1, updateData1, students));
+    console.log(findByIdAndUpdate(id2, updateData2, students));

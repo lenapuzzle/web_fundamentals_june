@@ -56,7 +56,7 @@ function findObjects(criteria, collection) {
         })
     }
 
-    return expectedArray
+    return expectedArray;
 }
 console.log(findObjects(searchCriteria2, items));
 console.log(findObjects(searchCriteria1, items));
